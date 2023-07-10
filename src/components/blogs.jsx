@@ -1,13 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import "./blogs.css"
+import "../css/blogs.css"
 
-export const Blogs = ({Title, Description}) => {
+export const Blogs = ({Title, Path}) => {
   const navigate = useNavigate()
   return (
     <div className='card'>
         <div className='card-body'>         
-              <img src=''/>
+              <img src={Path} className="App-logo" alt="logo"/>
               <h4  onClick={()=>navigate("/blogsDetails")}>{Title}</h4>           
         </div>
     </div>

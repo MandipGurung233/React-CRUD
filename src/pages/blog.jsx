@@ -4,12 +4,11 @@ import { Blogs } from '../components/blogs'
 import { useNavigate } from 'react-router-dom'
 
 export const Blog = () => {
-  const navigate = useNavigate()
   return (
     <div className='App'>
         <div>
-
-          <Blogs Title="hello" Description="Hi"/>
+          <Blogs Title="hello" Path="../image/nature.jpg"/>
+          <Blogs Title="Junk food" Path="../image/nature.jpg"/>
         </div>
       
     </div>
